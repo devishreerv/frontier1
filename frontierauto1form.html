@@ -1,0 +1,383 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontire Automobile</title>
+    
+    <style>
+       body {
+    margin: 0;
+    margin-left: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('https://wallpapercave.com/wp/wp8922935.jpg'); /* Replace 'background-image.jpg' with your background image */
+    background-size: cover; /* Ensure the background image covers the entire background area */
+    background-position: center; /* Center the background image */
+}
+.container {
+    max-width: 90%; /* Adjust the maximum width as needed */
+    width: 500px; /* Set a fixed width for larger screens */
+    margin: 15px auto 0; /* Add margin at the top */
+    padding: 25px 20px;
+    border-radius: 5px;
+    text-align: start;
+    background: rgba(39, 27, 41, 0.03);
+    backdrop-filter: blur(2px); /* This creates the blur effect */
+    box-shadow: 0 8px 32px 0 rgba(61, 50, 62, 0.17); /* This creates the shadow effect */
+    color: #503f52;
+}
+
+.container .title {
+    font-size: 30px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    color: rgb(233, 236, 237);
+}
+
+.container .user-detail input,
+.container .user-detail select {
+    width: 100%; /* Set a fixed width for input fields and select options */
+    margin-bottom: 10px; /* Add space between elements */
+}
+
+.container .picklist select {
+    width: 100%; /* Set a fixed width for select options */
+    margin-bottom: 10px; /* Add space between elements */
+}
+
+
+.container .submit input {
+    margin: 0 auto; /* Center the submit button */
+    display: block; /* Make it a block-level element */
+    width: 50%; /* Set a percentage width */
+}
+
+
+        label{
+            font-size: 20px;
+            color: rgb(233, 236, 237);
+        }   
+        .user-detail input{
+            height: 28px;
+            width: 100%;
+            font-size: 20px;
+            border-color: #c3c4c6;
+            border-radius: 7px;
+            background-color: rgb(159, 159, 159,0.02);
+            color: #aab46c;
+        } 
+        .container .picklist select{
+            height: 35px;
+            width: 100%;
+            border-color: #c3c4c6;
+            border-radius: 7px;
+            text-align: center;
+            font-size: 18px;
+            color: #aab46c;
+            background-color: rgb(159, 159, 159,0.02);
+        }
+        .container .picklist ::selection{
+            color: rgb(233, 236, 237);
+        } 
+        
+        .container .picklist option{
+            background-color: #d8bbbb05;
+        }
+        .user-detail input:hover{
+            box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.3);
+        }
+        .container .picklist select:hover{
+            box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.3);
+        }
+        .container .checkbox input{
+        size: 20px;
+        }
+        .container .submit input{
+            margin-left: 30%;
+            text-align: center;
+            width: 35%;
+            font-size: 20px;
+           border-radius: 5px;
+           background: linear-gradient(135deg,#71b7e6,#9f9f9f);
+        }
+        .container .submit input:hover{
+            box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.3);
+        }
+       
+    </style>
+</head>
+
+<body>
+    
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+       
+   <!-- <script src="https://www.google.com/recaptcha/api.js"></script>
+        <script>
+         function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
+        </script>
+     <img src="https://imageio.forbes.com/specials-images/imageserve/64ae9d68fd737cad50534a0f/0x0.jpg" width="100%" height="700px" alt="Example Image" class="blur">-->
+   
+        
+    <div class="container">
+        <div class="title"> Registration Form </div>
+    
+        <form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DHz0000003dRM" method="POST">
+
+            <input type=hidden name="oid" value="00DGB000002FLcn">
+            <input type=hidden name="retURL" value="https://t4.ftcdn.net/jpg/05/05/39/07/360_F_505390776_8ilykzGiVSpIjUqdEXFhDY1ACRJZPDRD.jpg">
+
+        <div class="user-detail">
+            <label for="last_name"> Name :</label><input  id="last_name" maxlength="80" name="last_name" size="255" type="text" /><br>
+        
+        <!--<label for="country_code">Country Code:</label>
+        <input type="text" id="country_code" name="country_code" value="91" required><br><br>-->
+        <label for="mobile">Mobile :</label><input  id="mobile" maxlength="40" name="mobile" size="20" type="text" /><br>
+    
+        <label for="email">Email :</label><input  id="email" maxlength="80" name="email" size="25" type="text" /><br>
+        
+        <div class="picklist">
+        <label for="city">City :</label>
+        <select  id="00NGB00000PQK4R" name="00NGB00000PQK4R" title="City"><option value="">--None--</option><option value="Bangalore">Bangalore</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Mumbai">Mumbai</option>
+            </select><br>
+        <label for="pin_code" >Pin Code:</label>
+        <input  id="00NGB00000PQK4f" maxlength="6"  pattern="[0-9]{6}" name="00NGB00000PQK4f" /><br>
+          
+            
+
+
+
+
+
+
+
+
+        <label for="preferred_vehicle">PreferredVehicle:</label>
+        <select  id="00NGB00000PQK4l" name="00NGB00000PQK4l" title="Preferred Vehicle"><option value="">--None--</option><option value="Electric 2 Wheeler">Electric 2 Wheeler</option>
+            <option value="Electric 3 Wheeler">Electric 3 Wheeler</option>
+            <option value="Electric 4 Wheeler">Electric 4 Wheeler</option>
+            <option value="Electric 6 Wheeler">Electric 6 Wheeler</option>
+            <option value="Electric 8 Wheeler">Electric 8 Wheeler</option>
+            </select><br>
+            
+        
+            <label for="TestDriveDateTime">Test Drive Date/Time:</label>
+            <input id="TestDriveDateTime" maxlength="20" name="TestDriveDateTime" size="20" type="datetime-local" min="" onchange="updateMinDate()">
+            
+            <script>
+                function updateMinDate() {
+                    var now = new Date();
+                    now.setDate(now.getDate() + 1); // Set to the next day
+                    var year = now.getFullYear();
+                    var month = now.getMonth() + 1;
+                    var day = now.getDate();
+                    var hour = now.getHours();
+                    var minute = now.getMinutes();
+                    var formattedDate = year + '-' + (month < 10 ? '0' : '') + month + '-' + (day < 10 ? '0' : '') + day + 'T' + (hour < 10 ? '0' : '') + hour + ':' + (minute < 10 ? '0' : '') + minute;
+                    document.getElementById("TestDriveDateTime").min = formattedDate;
+                }
+                updateMinDate(); // Call initially to set minimum date
+            </script>
+            
+            
+            <span class="dateInput">
+  
+              
+            <input  id="00NGB00000PQK4p" name="00NGB00000PQK4p" size="20" type="text" readonly style="display: none;">
+          </span>
+              <script>
+                  const dateTimeInput = document.getElementById('TestDriveDateTime');
+                  const displayText = document.getElementById('00NGB00000PQK4p');
+  
+                  dateTimeInput.addEventListener('change', function() {
+                      const selectedDateTime = new Date(dateTimeInput.value);
+                      const formattedDate = selectedDateTime.toLocaleDateString('en-GB', {
+                          day: '2-digit',
+                          month: '2-digit',
+                          year: 'numeric'
+                      });
+                      const formattedTime = selectedDateTime.toLocaleTimeString('en-US', {
+                          hour: '2-digit',
+                          minute: '2-digit'
+                      });
+                      const formattedDateTime = `${formattedDate}, ${formattedTime}`;
+                      displayText.value = formattedDateTime;
+                  });
+              </script>
+          
+
+
+
+           <br>
+        <label for="trade_in">Trade in:</label>
+        <select  id="00NGB00000PQK4v" name="00NGB00000PQK4v" title="Trade in"><option value="">--None--</option><option value="Yes">Yes</option>
+            <option value="No">No</option>
+            </select><br>
+        <label for="financing_required">Financing Required:</label>
+        <select  id="00NGB00000PQK4c" name="00NGB00000PQK4c" title="Financing required"><option value="">--None--</option><option value="Yes">Yes</option>
+            <option value="No">No</option>
+            </select><br>
+        
+        
+        <label for="lead_source" style="display: none;">Lead Source :</label>
+        <select  id="lead_source" name="lead_source" style="display: none;">
+            <option value="">--None--</option>
+    <option value="Advertisement">Advertisement</option>
+    <option value="Employee Referral">Employee Referral</option>
+    <option value="External Referral">External Referral</option>
+    <option value="Partner">Partner</option>
+    <option value="Public Relations">Public Relations</option>
+    <option value="Seminar - Internal">Seminar - Internal</option>
+    <option value="Seminar - Partner">Seminar - Partner</option>
+    <option value="Trade Show">Trade Show</option>
+    <option value="Web" selected>Web</option>
+    <option value="Word of mouth">Word of mouth</option>
+    <option value="Other">Other</option>
+    <option value="Google Search Ads">Google Search Ads</option>
+    <option value="Google Display Ads">Google Display Ads</option>
+    <option value="Google Youtube Ads">Google Youtube Ads</option>
+    <option value="Bing Search Ads">Bing Search Ads</option>
+    <option value="Bing Display Ads">Bing Display Ads</option>
+    <option value="Facebook Ads">Facebook Ads</option>
+    <option value="LinkedIn Ads">LinkedIn Ads</option>
+    <option value="Outbrain">Outbrain</option>
+    <option value="Taboola">Taboola</option>
+    <option value="Affiliate-SMS">Affiliate-SMS</option>
+    <option value="Affiliate-email">Affiliate-email</option>
+    <option value="Email">Email</option>
+    <option value="SMS">SMS</option>
+    <option value="Google Search Organic">Google Search Organic</option>
+    <option value="Bing Search Organic">Bing Search Organic</option>
+    <option value="Facebook Chat">Facebook Chat</option>
+    <option value="Facebook Post">Facebook Post</option>
+    <option value="Facebook Caller">Facebook Caller</option>
+    <option value="Instagram Chat">Instagram Chat</option>
+    <option value="Instagram Post">Instagram Post</option>
+    <option value="LinkedIn Post">LinkedIn Post</option>
+    <option value="LinkedIn Message/InMail">LinkedIn Message/InMail</option>
+    <option value="Direct">Direct</option>
+    <option value="Referral">Referral</option>
+    <option value="Adgebra Ads">Adgebra Ads</option>
+    <option value="Daily Hunt Ads">Daily Hunt Ads</option>
+    <option value="Inshorts Ads">Inshorts Ads</option>
+    <option value="TOI Ads">TOI Ads</option>
+    <option value="Icubes">Icubes</option>
+    <option value="Emarketz Google Search Ads">Emarketz Google Search Ads</option>
+    <option value="Kraftivo">Kraftivo</option>
+    <option value="Design Ramp">Design Ramp</option>
+    <option value="99 Acres">99 Acres</option>
+    <option value="Adcanopus">Adcanopus</option>
+    <option value="CPX">CPX</option>
+    <option value="Brandklik">Brandklik</option>
+    <option value="Lead On Demand">Lead On Demand</option>
+    <option value="Pixotrack">Pixotrack</option>
+    <option value="Rediff">Rediff</option>
+    <option value="Socialsire">Socialsire</option>
+    <option value="Facebook Page">Facebook Page</option>
+    <option value="Facebook Paid Website">Facebook Paid Website</option>
+    <option value="Google Discovery Ads">Google Discovery Ads</option>
+    <option value="Radio">Radio</option>
+    <option value="3dot14">3dot14</option>
+    <option value="Sulekha">Sulekha</option>
+    <option value="Quikr homes">Quikr homes</option>
+    <option value="Emarketz">Emarketz</option>
+    <option value="Hofeto">Hofeto</option>
+    <option value="Floma">Floma</option>
+    <option value="Zingy Home">Zingy Home</option>
+    <option value="Trade Indian">Trade Indian</option>
+    <option value="Common Floor">Common Floor</option>
+    <option value="Voot">Voot</option>
+    <option value="Hotstar">Hotstar</option>
+    <option value="Justdial">Justdial</option>
+    <option value="Live Chat">Live Chat</option>
+    <option value="YT-Awareness">YT-Awareness</option>
+    <option value="Display-Awareness">Display-Awareness</option>
+    <option value="Opicle">Opicle</option>
+    <option value="Surya Kiran L &amp; T">Surya Kiran L &amp; T</option>
+    <option value="Mobligent">Mobligent</option>
+    <option value="Mediaxpedia">Mediaxpedia</option>
+    <option value="Hubbleadz">Hubbleadz</option>
+    <option value="ContentDB">ContentDB</option>
+    <option value="Quora Performance">Quora Performance</option>
+    <option value="IRCTC">IRCTC</option>
+    <option value="Hotstar-Awareness">Hotstar-Awareness</option>
+    <option value="Facebook-Awareness">Facebook-Awareness</option>
+    <option value="Voot-Awareness">Voot-Awareness</option>
+    <option value="Quora-Awareness">Quora-Awareness</option>
+    <option value="TOI_Republic_Day">TOI_Republic_Day</option>
+    <option value="IndianExpress">IndianExpress</option>
+    <option value="Dun&amp;Bradstreet">Dun&amp;Bradstreet</option>
+    <option value="Mediazotic">Mediazotic</option>
+    <option value="DC Client referral">DC Client referral</option>
+    <option value="General referral">General referral</option>
+    <option value="Management referral">Management referral</option>
+    <option value="DailyHunt Ads">DailyHunt Ads</option>
+    <option value="TOI">TOI</option>
+    <option value="NULL">NULL</option>
+    <option value="Google AdWords">Google AdWords</option>
+    <option value="Bing Ads">Bing Ads</option>
+    <option value="Social Media - Paid">Social Media - Paid</option>
+    <option value="Affiliate">Affiliate</option>
+    <option value="Organic Search">Organic Search</option>
+    <option value="Social Media - Organic">Social Media - Organic</option>
+    <option value="Not Applicable">Not Applicable</option>
+    <option value="Unknown">Unknown</option>
+    <option value="Asklaila">Asklaila</option>
+    <option value="Facebook Messenger">Facebook Messenger</option>
+    <option value="Homify">Homify</option>
+    <option value="Housing.com">Housing.com</option>
+    <option value="Instagram Ads">Instagram Ads</option>
+    <option value="Instagram Messenger">Instagram Messenger</option>
+    <option value="Just Dial">Just Dial</option>
+    <option value="Magic bricks">Magic bricks</option>
+    <option value="Quiker">Quiker</option>
+    <option value="Zingy">Zingy</option>
+    <option value="DSA">DSA</option>
+    <option value="Architects">Architects</option>
+    <option value="Miscellaneous Referral">Miscellaneous Referral</option>
+    <option value="BNI Referral">BNI Referral</option>
+    <option value="Brand Activation">Brand Activation</option>
+    <option value="Client Referral">Client Referral</option>
+    <option value="Direct Leads">Direct Leads</option>
+    <option value="Caller Via Newspaper/AD&#39;S">Caller Via Newspaper/AD&#39;S</option>
+        </select><br></div>
+      </div>
+
+        <style>
+            .hidden {
+                display: none;
+            }
+        </style>
+        <label for="recordType" class="hidden">Lead Record Type</label>
+        <select id="recordType" name="recordType" class="hidden">
+            <option value="">--None--</option>
+            <option value="012GB000000wDAb">Corporate Lead</option>
+            <option value="012GB000000wDGo" selected>Person Lead</option>
+        </select>
+            
+       <div class="submit"><input type="submit" name="submit"></div>
+    </form>
+</div>
+
+<div style="position: fixed; bottom: 10px; right: 10px;">
+    <a href="https://api.whatsapp.com/send?phone=918792545925&text=Hii" title="Simpleenergy Customer Care">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTli1G4pMOod7lwFkP1uP4hNuymm37QdzSwTA&s" alt="WhatsApp" width="50" height="50" style="border-radius: 50%;">
+    </a>
+</div>
+   <!-- <footer>
+        <p>&copy; 2024 Frontire Automobile. All rights reserved.</p>
+    </footer> -->
+</body>
+
+</html>

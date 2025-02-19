@@ -1,0 +1,85 @@
+
+
+body {
+    margin: 0;
+    margin-left: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('https://wallpapercave.com/wp/wp8922935.jpg'); /* Replace 'background-image.jpg' with your background image */
+    background-size: cover;
+  }
+
+.container{
+    max-width: 500px;
+    width: 100%;
+    padding: 25px 20px;
+    
+    border-radius: 5px;
+    margin-top: 600px;
+    margin-bottom: 50px;
+   text-align: start;
+   background: rgba(218, 7, 197, 0.03);
+   backdrop-filter: blur(2px); /* This creates the blur effect */
+    box-shadow: 0 8px 32px 0 rgba(61, 50, 62, 0.17); /* This creates the shadow effect */
+    backdrop-filter: blur(2px); /* Adjust the blur value as needed */
+    color: #503f52;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+   position: relative;
+   text-align: center;
+   padding: 10px;
+   color: rgb(233, 236, 237);
+  
+   }
+label{
+    font-size: 20px;
+    color: rgb(233, 236, 237);
+}   
+.user-detail input{
+    height: 28px;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 3px;
+    background-color: rgb(159, 159, 159,0.02);
+    color: rgb(233, 236, 237);
+} 
+.container .picklist select{
+    height: 35px;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    background-color: rgb(159, 159, 159,0.02);
+}
+.container .picklist ::selection{
+    color: rgb(233, 236, 237);
+} 
+
+.container .picklist option{
+    background-color: rgb(159, 159, 159,0.02);
+}
+.user-detail input:hover{
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+.container .picklist select:hover{
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+.container .checkbox input{
+size: 20px;
+}
+.container .submit input{
+    margin-left: 30%;
+    text-align: center;
+    width: 35%;
+    font-size: 20px;
+   border-radius: 5px;
+   background: linear-gradient(135deg,#71b7e6,#9f9f9f);
+}
+.container .submit input:hover{
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
